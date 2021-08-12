@@ -24,7 +24,6 @@ const Right = styled.div`
   right: 49px;
   display: flex;
   align-items: center;
-  text-decoration: none;
 `;
 
 const NavItem = styled.a`

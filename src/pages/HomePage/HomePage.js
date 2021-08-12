@@ -9,6 +9,7 @@ const PageContainer = styled.div`
   flex-direction: column;
   min-height: 90vh;
   font-size: 15px;
+  font-family: Poppins,sans-serif;
 `;
 
 const PageContent = styled.div`
