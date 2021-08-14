@@ -45,13 +45,15 @@ const Follow = styled.div`
 const IconGroup = styled.div`
   font-size: 23px;
   font-weight: normal;
-  padding-top: 10px;
+  padding-top: 2px;
 `;
 
 const IconItem = styled.a`
   margin: 0 10px;
   cursor: pointer;
   display:inline-block;
+  text-decoration: none;
+  color:rgb(59,60,78);
   &:hover{
     color:rgb(24,119,242);
     -webkit-transform: scale(1.4);

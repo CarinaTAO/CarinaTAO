@@ -8,13 +8,13 @@ const Container = styled.div`
   width: auto;
   height: 70px;
   align-items: center;
-  font-family: Poppins,sans-serif;
+  font-family: poppins-semibold,poppins,sans-serif;
   box-shadow: 0 3px 8px 0 rgb(21 47 95 / 12%);
 `;
 
 const Left = styled.div`
   padding-left: 49px;
-  font-weight: 800;
+  font-weight: Bold 700;
   font-size: 25px;
   font-stretch: 25px/1.4em;
 `;
