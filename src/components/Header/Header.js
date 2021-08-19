@@ -58,7 +58,7 @@ export class Header extends Component {
   render() {
     return (
       <Container>
-        <Left> Carina TAO</Left>
+        <Left> Hanrui TAO</Left>
         <Right>
           <StyledLink to="/"><NavItem>Home</NavItem></StyledLink>
           <StyledLink to="/resume"><NavItem>Resume</NavItem></StyledLink>

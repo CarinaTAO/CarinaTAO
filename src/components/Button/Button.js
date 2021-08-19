@@ -15,11 +15,23 @@ const StyledButton = styled.button`
     color:black;
     transition: .4s ease 0s;
   }
+
+  ${(props)=> ({
+    sm:css`
+      border: 2px solid rgb(0,80,255);
+      border-radius: 30px;
+      margin-left: 40%;
+      padding: 1% 3%;
+      font-size: 13px;
+
+    `,
+
+  }[props.sizeprops])}
 `;
 
-const Button = ({children}) =>(
+const Button = ({children, size}) =>(
 
-  <StyledButton>{children}</StyledButton>
+  <StyledButton sizeprops={size}>{children}</StyledButton>
 
 )
 

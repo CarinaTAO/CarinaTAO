@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import {Container, Row, Col} from 'react-bootstrap';
+import { Row, Col} from 'react-bootstrap';
 import styled, { css } from "styled-components";
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import PageHeader from '../../components/PageHeader';
-import Square from '../../components/Square';
 import Card from '../../components/Card';
+import CardFont from '../../components/CardFont';
 import Button from '../../components/Button';
 import CV from '../../assets/file/HanruiTAO.pdf';
 
@@ -38,37 +38,6 @@ const SecondHeader = styled.div`
 const CVButton = styled.div`
   margin-left: 30%;
   margin-top: 6%;
-`;
-
-const CardFont = styled.div`
-  color:rgb(115,115,115);
-  ${(props)=> ({
-    time:css`
-      margin-left: 10%;
-      margin-top: 20%;
-      color: rgb(0,80,255);
-      font-size: 20px;
-      font-weight: 800;
-    `,
-    title:css`
-      padding-top: 5%;
-      padding-left: 10%;
-      font-size: 17px;
-      font-weight: normal;
-    `,
-    detail:css`
-      padding:5% 10%;
-      font-size: 17px;
-      font-weight: normal;
-    `,
-    skill:css `
-      margin-left: 10%;
-      margin-top: 10%;
-      color: rgb(0,80,255);
-      font-size: 20px;
-      font-weight: 800;
-    `,
-  }[props.type || "time"])}
 `;
 
 const SkillRight = styled.div`

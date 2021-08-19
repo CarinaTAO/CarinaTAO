@@ -66,7 +66,7 @@ export class Footer extends Component {
   render() {
     return (
       <Container>
-        <Left> © 2021 All rights reserved.<br /> Designed by Carina TAO</Left>
+        <Left> © 2021 All rights reserved.<br /> Designed by Hanrui TAO</Left>
         <Email>Email
           <Detail>carina.tao5@gmail.com</Detail>
         </Email>

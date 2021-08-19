@@ -153,7 +153,7 @@ export class HomePage extends Component {
                 <LeftBack>
                   <Card>
                     <Img src={ProfileImg}></Img>
-                    <Name type="first">Carina</Name>
+                    <Name type="first">Hanrui</Name>
                     <Name type="last">TAO</Name>
                     <Line />
                     <Name type="title">Frontend Developer</Name>

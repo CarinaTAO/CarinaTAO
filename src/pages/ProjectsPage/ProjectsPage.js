@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
-import {Container, Row, Col} from 'react-bootstrap';
+import { Row, Col} from 'react-bootstrap';
 import styled, { css } from "styled-components";
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import PageHeader from '../../components/PageHeader';
-import Square from '../../components/Square';
 import Card from '../../components/Card';
+import CardFont from '../../components/CardFont';
 import Button from '../../components/Button';
-import CV from '../../assets/file/HanruiTAO.pdf';
+import PersonalWeb from '../../assets/img/personalweb.jpg';
+import ProfileImg from '../../assets/img/profile.jpg';
+
 
 const PageContainer = styled.div`
   margin: auto;
@@ -28,222 +30,79 @@ const StyledCol = styled(Col)`
   z-index: 0;
 `;
 
-const SecondHeader = styled.div`
-  margin-left: 40%;
-  margin-top: 6%;
-  font-size: 24px;
-  font-weight: 800;
+
+const SideBar = styled.div`
+  background-color: rgb(0,80,255);
+  width: 10px;
+  height: 60px;
+  margin-top: 50px;
 `;
 
-const CVButton = styled.div`
-  margin-left: 30%;
-  margin-top: 6%;
-`;
-
-const CardFont = styled.div`
-  color:rgb(115,115,115);
-  ${(props)=> ({
-    time:css`
-      margin-left: 10%;
-      margin-top: 20%;
-      color: rgb(0,80,255);
-      font-size: 20px;
-      font-weight: 800;
-    `,
-    title:css`
-      padding-top: 5%;
-      padding-left: 10%;
-      font-size: 17px;
-      font-weight: normal;
-    `,
-    detail:css`
-      padding:5% 10%;
-      font-size: 17px;
-      font-weight: normal;
-    `,
-    skill:css `
-      margin-left: 10%;
-      margin-top: 10%;
-      color: rgb(0,80,255);
-      font-size: 20px;
-      font-weight: 800;
-    `,
-  }[props.type || "time"])}
-`;
-
-const SkillRight = styled.div`
-  margin-top: 20%;
+const Img = styled.img`
+  height: 100%;
+  width: 100%;
 `;
 
 export class ProjectsPage extends Component {
   render() {
+    console.log(PersonalWeb);
     return (
         <div>
-        <PageContainer> 
+        <PageContainer>
           <Header />
           <div margin-right="0">
             <StyledRow margin-right="0">
               <StyledCol>
                 <PageHeader children="Projects" size="lg"></PageHeader>
-                <Row>
-                  <Col xs={6}>
-                    <SecondHeader>Experience</SecondHeader>
-                  </Col>
-                  
-                  <Col xs={6}>
-                    <CVButton>
-                      <a href={CV} target="_blank" rel="noopener noreferrer" download>
-                        <Button children="Download CV"></Button>
-                      </a>
-                    </CVButton>
-                  </Col>
-                </Row>
+                <Card type="projects">
+                  <Row>
+                    <Col sm={5}>
+                      <Row>
+                          <Col sm={1}>
+                            <SideBar />
+                          </Col>
+                          <Col sm={11}>
+                            <CardFont type="pjname">Personal Website</CardFont>
+                            <CardFont type="pjrole">Owner &nbsp; &nbsp; &nbsp;Mar 2021 - Apr 2021</CardFont>
+                            <CardFont type="pjdetail">• Design and develop a personal website.
+                              <br/>• Used skills: HTML5, CSS3, SCSS, Javascript, ES6, Bootstrap, Flexbox, Git.
+                            </CardFont>
+                          </Col>
+                      </Row>                 
+                    </Col>
+
+                    <Col sm={7}>
+                      <Img src={PersonalWeb}></Img>
+                      <Button size="sm" children="View Code"></Button>
+                    </Col>
+                  </Row>
+                </Card>
+
+                                <Card type="projects">
+                  <Row>
+                    <Col sm={5}>
+                      <Row>
+                          <Col sm={1}>
+                            <SideBar />
+                          </Col>
+                          <Col sm={11}>
+                            <CardFont type="pjname">Personal Website</CardFont>
+                            <CardFont type="pjrole">Owner &nbsp; &nbsp; &nbsp;Mar 2021 - Apr 2021</CardFont>
+                            <CardFont type="pjdetail">• Design and develop a personal website.
+                              <br/>• Used skills: HTML5, CSS3, SCSS, Javascript, ES6, Bootstrap, Flexbox, Git.
+                            </CardFont>
+                          </Col>
+                      </Row>                 
+                    </Col>
+
+                    <Col sm={7}>
+                      <Img src={PersonalWeb}></Img>
+                      <Button size="sm" children="View Code"></Button>
+                    </Col>
+                  </Row>
+                </Card>
+
                 
-
-                <Card>
-                  <Row>
-                    <Col sm={5}>
-                      <CardFont>2019 - 2020</CardFont>
-                      <CardFont type="title">Kaggle Competition: <br />Forecast Rossmann Store Sales</CardFont>
-                    </Col>
-                    
-                    <Col sm={7}>
-                      <CardFont type="detail">• Extract 1017209 pieces of data which are about the store, promotion, and competitor data; Responsible for the data
-                        cleaning and data analysis.<br/>
-                        • Build three different Machine Learning algorithms models and an ensemble learning model to fit and train the train
-                        data set; <br/>
-                        • Forecast store sales by using different models.
-                        Analyze results and find that using the ensemble learning model can get a better result that is more precise and
-                        generalized; Also get a good score in this Kaggle competition.
-                        </CardFont>
-                    </Col>
-                  </Row>
-                </Card>
-
-                 <Card>
-                  <Row>
-                    <Col sm={5}>
-                      <CardFont>2019 - 2020</CardFont>
-                      <CardFont type="title">Kaggle Competition: <br />Forecast Rossmann Store Sales</CardFont>
-                    </Col>
-                    
-                    <Col sm={7}>
-                      <CardFont type="detail">• Extract 1017209 pieces of data which are about the store, promotion, and competitor data; Responsible for the data
-                        cleaning and data analysis.<br/>
-                        • Build three different Machine Learning algorithms models and an ensemble learning model to fit and train the train
-                        data set; <br/>
-                        • Forecast store sales by using different models.
-                        Analyze results and find that using the ensemble learning model can get a better result that is more precise and
-                        generalized; Also get a good score in this Kaggle competition.
-                        </CardFont>
-                    </Col>
-                  </Row>
-                </Card>
-
-                <SecondHeader>Education</SecondHeader>
-                <Card>
-                  <Row>
-                    <Col sm={5}>
-                      <CardFont>2019 - 2020</CardFont>
-                      <CardFont type="title">Kaggle Competition: <br />Forecast Rossmann Store Sales</CardFont>
-                    </Col>
-                    
-                    <Col sm={7}>
-                      <CardFont type="detail">• Extract 1017209 pieces of data which are about the store, promotion, and competitor data; Responsible for the data
-                        cleaning and data analysis.<br/>
-                        • Build three different Machine Learning algorithms models and an ensemble learning model to fit and train the train
-                        data set; <br/>
-                        • Forecast store sales by using different models.
-                        Analyze results and find that using the ensemble learning model can get a better result that is more precise and
-                        generalized; Also get a good score in this Kaggle competition.
-                        </CardFont>
-                    </Col>
-                  </Row>
-                </Card>
-
-                 <Card>
-                  <Row>
-                    <Col sm={5}>
-                      <CardFont>2019 - 2020</CardFont>
-                      <CardFont type="title">Kaggle Competition: <br />Forecast Rossmann Store Sales</CardFont>
-                    </Col>
-                    
-                    <Col sm={7}>
-                      <CardFont type="detail">
-                        • Extract 1017209 pieces of data which are about the store, promotion, and competitor data; Responsible for the data
-                        cleaning and data analysis.<br/>
-                        • Build three different Machine Learning algorithms models and an ensemble learning model to fit and train the train
-                        data set; <br/>
-                        • Forecast store sales by using different models.
-                        Analyze results and find that using the ensemble learning model can get a better result that is more precise and
-                        generalized; Also get a good score in this Kaggle competition.
-                        </CardFont>
-                    </Col>
-                  </Row>
-                </Card>
-
-                <SecondHeader>Skills</SecondHeader>
-                <Card>
-                  <Row>
-                    <Col xs={6}>
-                      <CardFont type="skill">Python</CardFont>
-                      <PageHeader children="Pandas" size="sm"></PageHeader>
-                      <PageHeader children="Scikit-Learn" size="sm"></PageHeader>
-                      <PageHeader children="Jupyter" size="sm"></PageHeader>      
-                      <PageHeader children="PyTorch " size="sm"></PageHeader>
-                    </Col>
-                    <Col xs={6}>
-                      <SkillRight>
-                        <PageHeader children="Numpy" size="sm"></PageHeader>
-                        <PageHeader children="Tensorflow + Keras " size="sm"></PageHeader>
-                        <PageHeader children="OpenCV" size="sm"></PageHeader>
-                      </SkillRight>
-                    </Col>
-                  </Row>
-
-                  <Row>
-                    <Col xs={6}>
-                      <CardFont type="skill">Web Development</CardFont>
-                      <PageHeader children="Javascript" size="sm"></PageHeader>
-                      <PageHeader children="React" size="sm"></PageHeader>
-                      <PageHeader children="MongoDB" size="sm"></PageHeader>
-                      <PageHeader children="Axios" size="sm"></PageHeader>
-                      <PageHeader children="Git" size="sm"></PageHeader>     
-                      <PageHeader children="Github" size="sm"></PageHeader>
-                      <PageHeader children="Jira" size="sm"></PageHeader> 
-                    </Col>
-                    <Col xs={6}>
-                      <SkillRight>
-                        <PageHeader children="HTML + SASS/CSS" size="sm"></PageHeader>
-                        <PageHeader children="Node.JS " size="sm"></PageHeader>
-                        <PageHeader children="Amazon Web Services" size="sm"></PageHeader>
-                        <PageHeader children="Redux" size="sm"></PageHeader>
-                        <PageHeader children="Postman" size="sm"></PageHeader>
-                        <PageHeader children="Bitbucket" size="sm"></PageHeader>
-                        <PageHeader children="Agile" size="sm"></PageHeader>
-                      </SkillRight>
-                    </Col>
-                  </Row>
-
-                  <Row>
-                    <Col xs={6}>
-                      <CardFont type="skill">Languages</CardFont>
-                      <PageHeader children="Javascript" size="sm"></PageHeader>
-                      <PageHeader children="Python" size="sm"></PageHeader>
-                      <PageHeader children="C" size="sm"></PageHeader>
-                      <PageHeader children="HTML" size="sm"></PageHeader>
-                    </Col>
-                    <Col xs={6}>
-                      <SkillRight>
-                        <PageHeader children="PostgreSQL/SQLite3" size="sm"></PageHeader>
-                        <PageHeader children="C++" size="sm"></PageHeader>
-                        <PageHeader children="SASS/CSS" size="sm"></PageHeader>
-                        
-                      </SkillRight>
-                    </Col>
-                  </Row>
-                </Card>
-
               </StyledCol>
             </StyledRow>
           </div>
