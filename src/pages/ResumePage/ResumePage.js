@@ -140,7 +140,10 @@ export class ResumePage extends Component {
                   </Row>
                 </Card>
 
-                <SecondHeader>Education</SecondHeader>
+                <Col xs={6}>
+                    <SecondHeader>Education</SecondHeader>
+                </Col>
+                
                 <Card>
                   <Row>
                     <Col sm={5}>
@@ -182,7 +185,9 @@ export class ResumePage extends Component {
                   </Row>
                 </Card>
 
-                <SecondHeader>Skills</SecondHeader>
+                <Col xs={6}>
+                    <SecondHeader>Skills</SecondHeader>
+                </Col>
                 <Card>
                   <Row>
                     <Col xs={6}>
