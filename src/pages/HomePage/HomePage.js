@@ -118,16 +118,21 @@ const StyledRow = styled(Row)`
 `;
 
 const Text = styled.span`
-  font-weight: bolder;
+  font-weight: 700;
+  margin-left: 50px;
   ${(props)=>({
     hello:css `
+      margin-top: 100px;
       font-size: 80px;
       font-stretch: 100px/1.4em;
+
     `,
     intro:css`
       font-size: 20px;
     `,
     detail: css`
+      padding-top: 30px;
+      font-weight: normal;
       font-size: 17px;
     `,
   }[props.type || 'detail'])}
@@ -167,7 +172,14 @@ export class HomePage extends Component {
               </Col>
               <Col sm={7}>
                 <RightBack>
-                  <Text type="hello">HELLO!</Text>
+                  <Text type="hello">HELLO</Text>
+                  <Text type="intro">Here's who I am {`&`} what I do</Text>
+                  <Text type="detail">A passion Web Developer who has experience
+                    in decreasing development time by writing clean, stable, 
+                    and scalable code for the business. I am also an active learner who always 
+                    likes to learn and share my knowledge with others. 
+                    Most importantly I am very good at collaborating and communicating with others, 
+                    especially in Agile/Scrum teams..</Text>
                 </RightBack>
               </Col>
             </StyledRow>

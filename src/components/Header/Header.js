@@ -14,7 +14,7 @@ const Container = styled.div`
 
 const Left = styled.div`
   padding-left: 49px;
-  font-weight: Bold 700;
+  font-weight: 800;
   font-size: 25px;
   font-stretch: 25px/1.4em;
 `;
