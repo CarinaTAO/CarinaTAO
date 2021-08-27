@@ -16,6 +16,12 @@ const Card = styled.div`
       width: 80%;
       min-height:400px;
     `,
+    contact:css`
+      min-height:800px;
+      width: 50%;
+      margin-left: 27%;
+      padding:5% 0;
+    `,
   }[props.type])}
 `;
 export default Card;

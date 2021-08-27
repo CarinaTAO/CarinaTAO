@@ -25,6 +25,11 @@ const StyledButton = styled.button`
       font-size: 13px;
 
     `,
+    lg:css`
+      margin-left: 35%;
+      padding: 1% 10%;
+
+    `,
 
   }[props.sizeprops])}
 `;
