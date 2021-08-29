@@ -79,7 +79,8 @@ export class ResumePage extends Component {
                     <Col sm={7}>
                       <CardFont type="detail">• Designed and developed a job booking website which allows clients to post their jobs and taskers can search them.<br/>
                         • Worked as a Full-stack developer in a Scrum team which includes 6 Full-stack developers and one BA. Conducted daily stand up meeting, kick-off meeting every week and had two weeks per Scrum. <br/>
-                        • Developed several main functions for our website, including sign up, log in, browse tasks, show my tasks, user profile, show task location map, make offer, make comments, accept offer, complete task.<br/>
+                        • Developed several main functions for our website, including sign up, log in, browse tasks, show my tasks, user profile, show task location map, make offer, make comments, accept offer, complete task....<br/>
+                        <a href="https://www.linkedin.com/in/hanrui-tao/" target="_blank" style={{ textDecoration: 'none', marginLeft:'65%' }}> See more</a>
                         </CardFont>
                     </Col>
                   </Row>
@@ -95,7 +96,8 @@ export class ResumePage extends Component {
                     <Col sm={7}>
                       <CardFont type="detail"> • Designed and developed a website to provide a platform to post discounts for eateries and find discounts for diners<br/>
                         • Worked as a Front-end developer in a Scrum team which includes 2 Front-end developers and three Back-end developers.<br/>
-                        • Developed several main functions for our website, including sign up, log in, create voucher, book voucher, show user's voucher, verify voucher, recommend eatery, search eatery, add comments.
+                        • Developed several main functions for our website, including sign up, log in, create voucher, book voucher, show user's voucher, verify voucher, recommend eatery, search eatery, add comments....<br/>
+                        <a href="https://www.linkedin.com/in/hanrui-tao/" target="_blank" style={{ textDecoration: 'none', marginLeft:'65%' }}> See more</a>
                         </CardFont>
                     </Col>
                   </Row>
@@ -112,7 +114,8 @@ export class ResumePage extends Component {
                       <CardFont type="detail"> • Designed and developed a personal website to show my resume, my portfolios and provide the way for others to contact me<br/>
                         • Implemented UI design for this personal website with Balsamiq Wireframes<br/>
                         • Implemented frontend with React, HTML5, CSS3, JavaScript ES6, Flexbox, React Boostrap, React Icon,
-                        Formspree, Responsive design
+                        Formspree, Responsive design....<br/>
+                        <a href="https://www.linkedin.com/in/hanrui-tao/" target="_blank" style={{ textDecoration: 'none', marginLeft:'65%' }}> See more</a>
                         </CardFont>
                     </Col>
                   </Row>
@@ -142,7 +145,7 @@ export class ResumePage extends Component {
                     <SecondHeader>Education</SecondHeader>
                 </Col>
                 
-                <Card>
+                <Card type="edu">
                   <Row>
                     <Col sm={5}>
                       <CardFont>Sep 2019 - Sep 2021</CardFont>
@@ -150,14 +153,14 @@ export class ResumePage extends Component {
                     </Col>
                     
                     <Col sm={7}>
-                      <CardFont type="detail">• Information Technology<br/>
+                      <CardFont type="detail" style={{marginTop:"12%"}}>Major: Information Technology<br/>
                         
                         </CardFont>
                     </Col>
                   </Row>
                 </Card>
 
-                 <Card>
+                 <Card type="edu">
                   <Row>
                     <Col sm={5}>
                       <CardFont>Sep 2015 - Jun 2029</CardFont>
@@ -165,8 +168,7 @@ export class ResumePage extends Component {
                     </Col>
                     
                     <Col sm={7}>
-                      <CardFont type="detail">
-                        • Information Management and Information System
+                      <CardFont type="detail" style={{marginTop:"12%"}}>Major: Information Management and Information System
                         </CardFont>
                     </Col>
                   </Row>

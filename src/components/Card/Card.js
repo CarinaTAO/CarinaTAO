@@ -10,6 +10,9 @@ const Card = styled.div`
   box-shadow: -11.31px 11.31px 17px 0px rgba(138,131,124,0.23);
 
   ${(props)=>({
+    edu:css`
+      min-height:200px;
+    `,
     projects:css`
       margin-left: 10%;
       margin-top: 90px;
