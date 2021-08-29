@@ -134,6 +134,7 @@ const Text = styled.span`
       padding-top: 30px;
       font-weight: normal;
       font-size: 17px;
+      width: 77%;
     `,
   }[props.type || 'detail'])}
 `;
@@ -159,10 +160,10 @@ export class HomePage extends Component {
                     <Name type="title">Frontend Developer</Name>
                     <CardBottom>
                       <IconGroup>
-                        <IconItem><FaFacebookSquare/></IconItem>
-                        <IconItem><FaInstagramSquare/></IconItem>
-                        <IconItem><FaGithubSquare/></IconItem>
-                        <IconItem><FaLinkedin/></IconItem>
+                        <IconItem href="https://www.facebook.com/hanrui.tao.5" target="_blank"><FaFacebookSquare/></IconItem>
+                        <IconItem href="https://www.instagram.com/carina.7bb/" target="_blank"><FaInstagramSquare/></IconItem>
+                        <IconItem href="https://github.com/CarinaTAO?tab=repositories" target="_blank"><FaGithubSquare/></IconItem>
+                        <IconItem href="https://www.linkedin.com/in/hanrui-tao" target="_blank"><FaLinkedin/></IconItem>
                       </IconGroup>
                     </CardBottom>
                   </Card>
@@ -174,12 +175,12 @@ export class HomePage extends Component {
                 <RightBack>
                   <Text type="hello">HELLO</Text>
                   <Text type="intro">Here's who I am {`&`} what I do</Text>
-                  <Text type="detail">A passion Web Developer who has experience
-                    in decreasing development time by writing clean, stable, 
-                    and scalable code for the business. I am also an active learner who always 
-                    likes to learn and share my knowledge with others. 
-                    Most importantly I am very good at collaborating and communicating with others, 
-                    especially in Agile/Scrum teams..</Text>
+                  <Text type="detail">A motivated and enthusiastic web developer. 
+                  I have web development experience with React and Nodejs. 
+                  I am also an active learner who always likes to learn and 
+                  share my knowledge with others. 
+                  Most importantly I performed well in collaborating and 
+                  communicating with others, especially in Agile/Scrum teams.</Text>
                 </RightBack>
               </Col>
             </StyledRow>

@@ -72,10 +72,10 @@ export class Footer extends Component {
         </Email>
         <Follow>Follow
           <IconGroup>
-            <IconItem><FaFacebookSquare/></IconItem>
-            <IconItem><FaInstagramSquare/></IconItem>
-            <IconItem><FaGithubSquare/></IconItem>
-            <IconItem><FaLinkedin/></IconItem>
+            <IconItem href="https://www.facebook.com/hanrui.tao.5" target="_blank"><FaFacebookSquare/></IconItem>
+            <IconItem href="https://www.instagram.com/carina.7bb/" target="_blank"><FaInstagramSquare/></IconItem>
+            <IconItem href="https://github.com/CarinaTAO?tab=repositories" target="_blank"><FaGithubSquare/></IconItem>
+            <IconItem href="https://www.linkedin.com/in/hanrui-tao" target="_blank"><FaLinkedin/></IconItem>
           </IconGroup>
           
         </Follow>

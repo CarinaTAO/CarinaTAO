@@ -8,7 +8,8 @@ import Card from '../../components/Card';
 import CardFont from '../../components/CardFont';
 import Button from '../../components/Button';
 import PersonalWeb from '../../assets/img/personalweb.jpg';
-import ProfileImg from '../../assets/img/profile.jpg';
+import Easyclean from '../../assets/img/Easyclean.jpg';
+import Valueeats from '../../assets/img/Valueeats.jpg';
 
 
 const PageContainer = styled.div`
@@ -62,23 +63,52 @@ export class ProjectsPage extends Component {
                             <SideBar />
                           </Col>
                           <Col sm={11}>
-                            <CardFont type="pjname">Personal Website</CardFont>
-                            <CardFont type="pjrole">Owner &nbsp; &nbsp; &nbsp;Mar 2021 - Apr 2021</CardFont>
-                            <CardFont type="pjdetail">• Design and develop a personal website.
-                              <br/>• Used skills: HTML5, CSS3, SCSS, Javascript, ES6, Bootstrap, Flexbox, Git.
+                            <CardFont type="pjname">Easy Clean</CardFont>
+                            <CardFont type="pjrole">Full-stack Developer <br/>Jun 2021 - Aug 2021</CardFont>
+                            <CardFont type="pjdetail">Skills: React, HTML5, CSS3, JavaScript ES6, React Boostrap 5, Material UI, React Icon, Flexbox, Redux, React Router, Responsive design
+                              Nodejs, JavaScript ES6, npm, MongoDB, Postman, JWT Token, JEST,
+                              Agile, Jira, BitBucket, AWS EC2, AWS S3
                             </CardFont>
                           </Col>
                       </Row>                 
                     </Col>
 
                     <Col sm={7}>
-                      <Img src={PersonalWeb}></Img>
-                      <Button size="sm" children="View Code"></Button>
+                      <Img src={Easyclean}></Img>
+                      <a href="https://www.easy-march.com/" target="_blank">
+                        <Button size="sm" children="View Website" ></Button>
+                      </a>
                     </Col>
                   </Row>
                 </Card>
 
-                                <Card type="projects">
+                <Card type="projects">
+                  <Row>
+                    <Col sm={5}>
+                      <Row>
+                          <Col sm={1}>
+                            <SideBar />
+                          </Col>
+                          <Col sm={11}>
+                            <CardFont type="pjname">Value Eats</CardFont>
+                            <CardFont type="pjrole">Frontend Developer <br/>Jun 2021 - Jul 2021</CardFont>
+                            <CardFont type="pjdetail">Skills: React, HTML5, CSS3, JavaScript ES6, React Boostrap 5, Material UI, React Icon, Flexbox, Axios, React Router
+                              , Django, Python, SQlite3, JWT Token, Agile, Jira, and Github
+                            </CardFont>
+                          </Col>
+                      </Row>                 
+                    </Col>
+
+                    <Col sm={7}>
+                      <Img src={Valueeats}></Img>
+                      <a href="https://github.com/CarinaTAO/ValueEatsWebsite" target="_blank">
+                        <Button size="sm" children="View Code"></Button>
+                      </a>
+                    </Col>
+                  </Row>
+                </Card>
+
+                <Card type="projects">
                   <Row>
                     <Col sm={5}>
                       <Row>
@@ -87,9 +117,9 @@ export class ProjectsPage extends Component {
                           </Col>
                           <Col sm={11}>
                             <CardFont type="pjname">Personal Website</CardFont>
-                            <CardFont type="pjrole">Owner &nbsp; &nbsp; &nbsp;Mar 2021 - Apr 2021</CardFont>
-                            <CardFont type="pjdetail">• Design and develop a personal website.
-                              <br/>• Used skills: HTML5, CSS3, SCSS, Javascript, ES6, Bootstrap, Flexbox, Git.
+                            <CardFont type="pjrole">Full-stack Developer <br/>Mar 2021 - Apr 2021</CardFont>
+                            <CardFont type="pjdetail">Skills: React, HTML5, CSS3, JavaScript ES6, Flexbox, React Boostrap, React Icon,Formspree, Responsive design
+                              Github, VScode, AWS S3
                             </CardFont>
                           </Col>
                       </Row>                 
@@ -97,7 +127,9 @@ export class ProjectsPage extends Component {
 
                     <Col sm={7}>
                       <Img src={PersonalWeb}></Img>
-                      <Button size="sm" children="View Code"></Button>
+                      <a href="https://github.com/CarinaTAO/CarinaTAO" target="_blank">
+                        <Button size="sm" children="View Code"></Button>
+                      </a>
                     </Col>
                   </Row>
                 </Card>
